@@ -17,10 +17,7 @@ $resultado = mysqli_query($databaseConnection, $GETquery);
 
 <body>
     <h1>Links</h1>
-    <div class = "linksContainer">
-    <a href="cadastroDeClientes.php">Cadastrar cliente</a>
     <a href="cadastroDeProdutos.php">Cadastrar produto</a>
-    </div>
     <?php 
         if (isset($_SESSION["mensagem"])) {
             echo "<p>{$_SESSION["mensagem"]}</p>";
