@@ -12,7 +12,7 @@ $resultado = mysqli_query($databaseConnection, $GETquery);
 
 <head>
     <title>Index</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="../styles/index.css">
 </head>
 
 <body>

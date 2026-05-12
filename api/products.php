@@ -6,7 +6,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $estoque = $_POST["estoque"];
     $custo = $_POST["custo"];
     $venda = $_POST["venda"];
-    $pastaDeImagens = "imagens/";
+    $pastaDeImagens = "images/";
     if (!file_exists($pastaDeImagens)) mkdir($pastaDeImagens, 0755, true);
     $nomeDaImagem = str_replace(" ", "_", $_FILES["imagem"]["name"]);
     $arquivoTemporario = $_FILES["imagem"]["tmp_name"];
@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastre Produtos</title>
-    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="../styles/products.css">
 </head>
 <body>
     <form method = "POST" enctype="multipart/form-data">
